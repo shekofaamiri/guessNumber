@@ -1,8 +1,8 @@
 import random
 
 try:
-    low = int(input('enter lower bound:\n'))
-    high = int(input('enter high bound:\n'))
+    low = int(input('Enter lower bound:\n'))
+    high = int(input('Enter high bound:\n'))
 except ValueError:
     print("Please enter valid integers for bounds.")
     exit()
@@ -12,9 +12,9 @@ guess_count = 5
 
 while guess_count > 0:
     try:
-        new_guess = int(input('enter your new guess:\n'))
+        new_guess = int(input('Enter your new guess:\n'))
     except ValueError:
-        print('Please enter a valid number')
+        print('Please enter a valid number.')
         continue
 
     if r == new_guess:
